@@ -1,0 +1,144 @@
+@import 'variables';
+@import 'login';
+@import 'sedes';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font;
+  text-decoration: none;
+  list-style: none;
+}
+body{
+  background-color: #f8f8f8;
+}
+.none{
+  display: none;
+}
+.flex{
+  display: flex;
+  justify-content: space-around;
+}
+.menu{
+  display: flex;
+  flex-direction: column;
+}
+header{
+  background-color: #f2f2f2;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  .logo{
+  width: 200px;
+  height: 25px;
+  }
+}
+#menu{
+  width: 17%;
+  position: fixed;
+  top: 45px;
+  height: 100vh;
+  float: left;
+  background-color: #f2f2f2;
+  ul li{
+  text-align: center;
+  }
+  a{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: 400;
+  color: #000;
+  text-transform: uppercase;
+  &:hover{
+    background-color: $primary-color;
+    color: #000;
+    }
+  }
+  span{
+  font-size: 30px;
+  }
+  #dash{
+  background-color: $primary-color;
+  color: #000;
+  font-weight: 700;
+  }
+  #logout{
+  background-color: #d5d5d5;
+  &:hover{
+    background-color: #b6b6b6;
+    }
+  }
+}
+.content{
+  position: relative;
+  top: 40px;
+  width: 83%;
+  float: right;
+  display: flex;
+  flex-wrap: wrap;
+}
+#content, #alunas{
+  background-image: url("../assets/images/bg2.jpg");
+  background-size: cover;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+}
+#alunas{
+  display: none;
+  .box h1{
+    font-size: 22px;
+  }
+  .box p{
+    font-weight: 600;
+  }
+}
+.box, .box1, .box2{
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  background-color: #f2f2f2;
+  box-shadow: 5px 5px 13px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+}
+.box:hover, .box1:hover{
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.4);
+}
+.box{
+  width: 31.5%;
+}
+.box1{
+  width: 48.1%;
+}
+.box h1, .box1 h1{
+  text-transform: uppercase;
+  font-size: 16px;
+  color: $primary-color;
+  margin-bottom: 10px;
+}
+.info-box{
+  background-color: #d5d5d5;
+  padding: 10px;
+  display: inline-block;
+  width: 45%;
+  margin: 5px;
+  p{
+  color: #1d1f29;
+  font-size: 16px;
+  font-weight: 700;
+  }
+}
+.info-box small{
+  text-transform: uppercase;
+}
+.info-label{
+  display: block;
+}
